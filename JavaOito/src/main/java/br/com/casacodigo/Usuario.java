@@ -12,4 +12,5 @@ public @Data class Usuario {
 	private int pontos;
 	private boolean moderador;
 	
+	public void tornaModerador() { this.moderador = true; }
 }

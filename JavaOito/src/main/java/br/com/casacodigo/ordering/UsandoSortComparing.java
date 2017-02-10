@@ -1,7 +1,8 @@
 package br.com.casacodigo.ordering;
 
+import static java.util.Comparator.comparing;
+
 import java.util.Collections;
-import static java.util.Comparator.*;
 import java.util.List;
 
 import br.com.casacodigo.Usuario;
@@ -36,6 +37,8 @@ public class UsandoSortComparing {
 		// Ou c/ static importing
 		usuarios.sort(comparing(u -> u.getNome()));
 		
+		// Ou c/ mehotd reference
+		usuarios.sort(comparing(Usuario::getNome));
 				
 	}
 	
