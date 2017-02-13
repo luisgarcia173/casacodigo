@@ -10,6 +10,7 @@ import br.com.casacodigo.UsuarioMock;
 
 public class UsandoStreamsAvancado {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		List<Usuario> usuarios = UsuarioMock.getUserList(20);
@@ -50,8 +51,6 @@ public class UsandoStreamsAvancado {
 		// Usando filter
 		boolean hasModerator = usuarios.stream()
 				.anyMatch(Usuario::isModerador); // allMatch, noneMatch.
-		
-		
 		
 	}
 	
